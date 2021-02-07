@@ -12,21 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfMvvMProject.ViewModels;
 
-namespace WpfMvvMProject
+namespace WpfMvvMProject.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for EmployeeView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EmployeeView : UserControl
     {
-        EmployeeViewModel ViewModel;
-        public MainWindow()
+        public EmployeeView()
         {
             InitializeComponent();
-            ViewModel = new EmployeeViewModel();
-            this.DataContext = ViewModel;
         }
     }
 }
